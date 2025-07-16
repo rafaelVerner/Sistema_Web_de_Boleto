@@ -2,11 +2,14 @@
 
 $request = $GLOBALS['request'] ?? [];
 
+
+//GET 
 if ($method === 'GET') {
    $smtm = $pdo->query("SELECT * FROM cobranca");
    echo json_encode($smtm->fetchAll(PDO::FETCH_ASSOC));
 
-
+   
+//POST
 }else if ($method === 'POST') {
 
 
@@ -27,6 +30,7 @@ if ($method === 'GET') {
    echo json_encode(['messagem'=> 'Cobrança cadastrada!'], JSON_UNESCAPED_UNICODE);
 
 
+//DELETE
 }else if ($method === 'DELETE') {
 
    $id = $request[0] ?? null;
@@ -40,7 +44,8 @@ if ($method === 'GET') {
    echo json_encode(['mensagem'=> 'Cobrança excluída!'], JSON_UNESCAPED_UNICODE);
 
 
-}else if ($method === 'PUT') { 
+//PATCH
+}else if ($method === 'PATCH') { 
 
    $data = json_decode(file_get_contents('php://input'), true);
     if (!isset($data['status']) || empty($data['status'])) {
