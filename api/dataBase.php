@@ -1,7 +1,7 @@
 <?php
 
 $db_host = 'mysql.railway.internal';
-$db_name = 'cobranca';
+$db_name = 'railway';
 $db_user = 'root';
 $db_pass = 'cgkVRdBzJYunyIcdHudfCNBiOTLOmcPe';
 
