@@ -136,7 +136,7 @@
                     }
 
                     try {
-                        const resposta = await fetch('cobreonlineapi-production.up.railway.app/cobranca', {
+                        const resposta = await fetch('https://cobreonlineapi-production.up.railway.app/cobranca', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -161,7 +161,7 @@
                 },
                 async carregarRegistros() {
                     try {
-                        const resposta = await fetch('cobreonlineapi-production.up.railway.app/cobranca', {
+                        const resposta = await fetch('https://cobreonlineapi-production.up.railway.app/cobranca', {
                             method: 'GET',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -188,7 +188,7 @@
 
                     if (!resultado.isConfirmed) return;
                     try {
-                        const resposta = await fetch('cobreonlineapi-production.up.railway.app/' + id, {
+                        const resposta = await fetch('https://cobreonlineapi-production.up.railway.app/cobranca/' + id, {
                             method: 'DELETE',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -206,7 +206,7 @@
                         status: 'Pago'
                     }
                     try {
-                        const resposta = await fetch('cobreonlineapi-production.up.railway.app/' + id, {
+                        const resposta = await fetch('https://cobreonlineapi-production.up.railway.app/cobranca/' + id, {
                             method: 'PATCH',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -224,7 +224,7 @@
                         status: 'Pendente'
                     }
                     try {
-                        const resposta = await fetch('cobreonlineapi-production.up.railway.app/' + id, {
+                        const resposta = await fetch('https://cobreonlineapi-production.up.railway.app/cobranca/' + id, {
                             method: 'PATCH',
                             headers: {
                                 'Content-Type': 'application/json'
