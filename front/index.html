@@ -74,18 +74,18 @@
                         <div><strong>Valor:</strong> R$ {{ Number(c.VALOR).toFixed(2) }}</div>
                         <div><strong>Data:</strong> {{ c.DATA }}</div>
                         <div><strong>Status:</strong> {{ c.STATUS }}</div>
-                    </div>
 
-                    <!-- Botões -->
-                    <div class="d-flex gap-2 mt-2 mt-md-0 align-self-end">
-                        <button class="btn btn-outline-danger" @click="excluirRegistro(c.id)">Excluir</button>
-                        <button class="btn"
-                            :class="c.STATUS === 'Pendente' ? 'btn-outline-success' : 'btn-outline-secondary'"
-                            @click="c.STATUS === 'Pendente' ? atualizarPago(c.id) : atualizarPendente(c.id)">
-                            {{ c.STATUS === 'Pendente' ? 'Pagar' : 'Pendente' }}
-                        </button>
-                    </div>
 
+                        <!-- Botões -->
+                        <div class="d-flex gap-2 mt-2 mt-md-0 align-self-end">
+                            <button class="btn btn-outline-danger" @click="excluirRegistro(c.id)">Excluir</button>
+                            <button class="btn"
+                                :class="c.STATUS === 'Pendente' ? 'btn-outline-success' : 'btn-outline-secondary'"
+                                @click="c.STATUS === 'Pendente' ? atualizarPago(c.id) : atualizarPendente(c.id)">
+                                {{ c.STATUS === 'Pendente' ? 'Pagar' : 'Pendente' }}
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
