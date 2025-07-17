@@ -1,0 +1,18 @@
+{
+  "services": [
+    {
+      "name": "api",
+      "sourceDir": "api",
+      "startCommand": null,
+      "buildCommand": null,
+      "rootDirectory": "api"
+    },
+    {
+      "name": "frontend",
+      "sourceDir": "front-api",
+      "buildCommand": "",
+      "staticPublishPath": "front-api",
+      "rootDirectory": "front-api"
+    }
+  ]
+}
