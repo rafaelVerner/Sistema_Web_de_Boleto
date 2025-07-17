@@ -5,7 +5,7 @@
 <p>Para testá-lo basta acessar clickar no URL acima e preencher os campos do formulário.</p>
 
 <h3>Testar o sistema localmente:</h3>
-<pre>
+<p>
     Para testar localmente é necessário o uso de um servidor local. A recomendação é o XAMPP, que foi o servidor Apache utilizdo para o desenvolvimento do sistema.
   É necessário que o repositório seja clonado na pasta htdocs do xampp. Além disso, deve-se criar a tabela em MySQL no phpMyAdmin e alterar as informações do arquivo
   database.php com as informações do seu banco de dados.
@@ -16,4 +16,4 @@
 
 
 
-</pre>
+</pe>
