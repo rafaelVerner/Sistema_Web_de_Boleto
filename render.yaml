@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: api-php
-    env: docker
-    plan: free
-    region: oregon
