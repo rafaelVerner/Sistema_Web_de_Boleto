@@ -73,12 +73,12 @@
                         <div><strong>Status:</strong> {{ c.STATUS }}</div>
                     </div>
                     <div class="d-flex gap-2 ms-3">
-                        <button class="btn btn-outline-danger ms-3" v-on:click="excluirRegistro(c.ID)">
+                        <button class="btn btn-outline-danger ms-3" v-on:click="excluirRegistro(c.id)">
                             Excluir
                         </button>
                         <button class="btn"
                             :class="c.STATUS === 'Pendente' ? 'btn-outline-success' : 'btn-outline-secondary'"
-                            v-on:click="c.STATUS === 'Pendente' ? atualizarPago(c.ID) : atualizarPendente(c.ID)">
+                            v-on:click="c.STATUS === 'Pendente' ? atualizarPago(c.id) : atualizarPendente(c.id)">
                             {{c.STATUS === 'Pendente' ? 'Pagar' : 'Pendente'}}
                         </button>
                     </div>
