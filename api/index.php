@@ -13,10 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 require 'dataBase.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
-$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$base = '/CobreOnline/api';
-$path = str_replace($base, '', $url);
-$request = explode('/', trim($path, '/'));
+$uri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+$scriptName = dirname($_SERVER["SCRIPT_NAME"]);
+$path = preg_replace("#^" . preg_quote($scriptName) . "#", "", $uri);
+$request = explode("/", trim($path, "/"));
 $resource = array_shift($request);
 
 switch ($resource) {
