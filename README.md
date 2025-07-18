@@ -1,10 +1,10 @@
 # CobreOnline
 
-##Como testar:
+## Como testar:
 O sistema Cobre online está hospedado no link: https://cobreonline.onrender.com.
 Para testá-lo basta acessar clickar no URL acima e preencher os campos do formulário.
 
-##Testar o sistema localmente:
+## Testar o sistema localmente:
     Para testar localmente é necessário:
     1. Configurar um servidor local. Recomendação: usar o **XAMPP**.
     2. Clonar o repositório na pasta htdocs do XAMPP.
